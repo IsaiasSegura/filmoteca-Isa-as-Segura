@@ -1,0 +1,24 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable cinema
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id button
+id button2
+id button3
+id imageView
+id imageView2
+id main
+id textView
+id textView2
+id toolbar
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.FilmotecaisaiasSegura
+style Theme.FilmotecaisaiasSegura
+xml backup_rules
+xml data_extraction_rules
