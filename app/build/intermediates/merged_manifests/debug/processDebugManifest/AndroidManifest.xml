@@ -28,7 +28,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.FilmotecaisaiasSegura" >
         <activity
-            android:name="es.pmdm.filmoteca.MainActivity"
+            android:name="es.pmdm.filmoteca.AboutActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

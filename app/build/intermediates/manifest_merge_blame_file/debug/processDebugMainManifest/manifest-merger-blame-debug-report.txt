@@ -44,8 +44,8 @@
 29-->C:\Users\isasegber2\filmoteca-Isa-as-Segura\app\src\main\AndroidManifest.xml:13:9-59
 30        <activity
 30-->C:\Users\isasegber2\filmoteca-Isa-as-Segura\app\src\main\AndroidManifest.xml:15:9-23:20
-31            android:name="es.pmdm.filmoteca.MainActivity"
-31-->C:\Users\isasegber2\filmoteca-Isa-as-Segura\app\src\main\AndroidManifest.xml:16:13-41
+31            android:name="es.pmdm.filmoteca.AboutActivity"
+31-->C:\Users\isasegber2\filmoteca-Isa-as-Segura\app\src\main\AndroidManifest.xml:16:13-42
 32            android:exported="true" >
 32-->C:\Users\isasegber2\filmoteca-Isa-as-Segura\app\src\main\AndroidManifest.xml:17:13-36
 33            <intent-filter>

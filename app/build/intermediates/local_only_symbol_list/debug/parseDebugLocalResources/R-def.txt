@@ -2,9 +2,26 @@ R_DEF: Internal format may change without notice
 local
 color black
 color white
+drawable alien
+drawable avatar
+drawable blade_runner
 drawable cinema
+drawable el_padrino
+drawable fight_club
+drawable forrest_gump
+drawable gladiator
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable inception
+drawable interestelar
+drawable matrix
+drawable pulp_fiction
+drawable schindlers_list
+drawable star_wars
+drawable the_dark_knight
+drawable the_lion_king
+drawable the_shining
+drawable titanic
 id button
 id button2
 id button3
@@ -14,7 +31,7 @@ id main
 id textView
 id textView2
 id toolbar
-layout activity_main
+layout about_activity
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name

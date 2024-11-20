@@ -1,74 +1,150 @@
 [
     {
-        "merged": "es.pmdm.filmoteca.app-debug-31:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "es.pmdm.filmoteca.app-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\layout\\activity_main.xml"
     },
     {
-        "merged": "es.pmdm.filmoteca.app-debug-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "es.pmdm.filmoteca.app-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_the_lion_king.webp.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\the_lion_king.webp"
     },
     {
-        "merged": "es.pmdm.filmoteca.app-debug-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "es.pmdm.filmoteca.app-main-33:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_interestelar.jpg.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\interestelar.jpg"
     },
     {
-        "merged": "es.pmdm.filmoteca.app-debug-31:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "es.pmdm.filmoteca.app-main-33:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "es.pmdm.filmoteca.app-debug-31:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "es.pmdm.filmoteca.app-main-33:/drawable/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "es.pmdm.filmoteca.app-debug-31:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "es.pmdm.filmoteca.app-main-33:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "es.pmdm.filmoteca.app-debug-31:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "es.pmdm.filmoteca.app-main-33:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "es.pmdm.filmoteca.app-debug-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "es.pmdm.filmoteca.app-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "es.pmdm.filmoteca.app-debug-31:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "es.pmdm.filmoteca.app-main-33:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\layout_activity_film_list.xml.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\layout\\activity_film_list.xml"
     },
     {
-        "merged": "es.pmdm.filmoteca.app-debug-31:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "es.pmdm.filmoteca.app-main-33:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "es.pmdm.filmoteca.app-debug-31:/layout_activity_main.xml.flat",
-        "source": "es.pmdm.filmoteca.app-main-33:/layout/activity_main.xml"
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_the_shining.jpg.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\the_shining.jpg"
     },
     {
-        "merged": "es.pmdm.filmoteca.app-debug-31:/drawable_ic_launcher_background.xml.flat",
-        "source": "es.pmdm.filmoteca.app-main-33:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_avatar.jpg.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\avatar.jpg"
     },
     {
-        "merged": "es.pmdm.filmoteca.app-debug-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "es.pmdm.filmoteca.app-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_star_wars.jpg.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\star_wars.jpg"
     },
     {
-        "merged": "es.pmdm.filmoteca.app-debug-31:/xml_backup_rules.xml.flat",
-        "source": "es.pmdm.filmoteca.app-main-33:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "es.pmdm.filmoteca.app-debug-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "es.pmdm.filmoteca.app-main-33:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_fight_club.jpg.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\fight_club.jpg"
     },
     {
-        "merged": "es.pmdm.filmoteca.app-debug-31:/drawable_cinema.png.flat",
-        "source": "es.pmdm.filmoteca.app-main-33:/drawable/cinema.png"
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "es.pmdm.filmoteca.app-debug-31:/xml_data_extraction_rules.xml.flat",
-        "source": "es.pmdm.filmoteca.app-main-33:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "es.pmdm.filmoteca.app-debug-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "es.pmdm.filmoteca.app-main-33:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_el_padrino.jpg.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\el_padrino.jpg"
+    },
+    {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_cinema.png.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\cinema.png"
+    },
+    {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_pulp_fiction.jpg.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\pulp_fiction.jpg"
+    },
+    {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_the_dark_knight.jpg.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\the_dark_knight.jpg"
+    },
+    {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_gladiator.jpg.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\gladiator.jpg"
+    },
+    {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_forrest_gump.jpg.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\forrest_gump.jpg"
+    },
+    {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_inception.jpg.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\inception.jpg"
+    },
+    {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_alien.jpg.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\alien.jpg"
+    },
+    {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_schindlers_list.jpg.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\schindlers_list.jpg"
+    },
+    {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_blade_runner.webp.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\blade_runner.webp"
+    },
+    {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_matrix.jpg.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\matrix.jpg"
+    },
+    {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_titanic.jpg.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\titanic.jpg"
+    },
+    {
+        "merged": "es.pmdm.filmoteca.app-debug-31:/layout_about_activity.xml.flat",
+        "source": "es.pmdm.filmoteca.app-main-33:/layout/about_activity.xml"
     }
 ]
