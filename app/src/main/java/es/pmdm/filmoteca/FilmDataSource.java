@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class FilmDataSource {
     public static ArrayList<Film> films;
+    public static boolean iniciado = false;
     public static void Initialize() {
         Film film = new Film();
         films = new ArrayList<Film>();
@@ -25,5 +26,11 @@ public class FilmDataSource {
         films.add(new Film(R.drawable.fight_club, "Fight Club", 1999, "David Fincher", Film.GENRE_DRAMA, Film.FORMAT_BLURAY, "https://www.imdb.com/title/tt0137523/", "Un hombre insatisfecho con su vida inicia un club secreto de peleas."));
         films.add(new Film(R.drawable.the_lion_king, "The Lion King", 1994, "Roger Allers, Rob Minkoff", Film.GENRE_DRAMA, Film.FORMAT_DIGITAL, "https://www.imdb.com/title/tt0110357/", "La historia de un león joven que debe recuperar su lugar como rey tras la traición de su tío."));
         films.add(new Film(R.drawable.alien, "Alien", 1979, "Ridley Scott", Film.GENRE_HORROR, Film.FORMAT_BLURAY, "https://www.imdb.com/title/tt0078748/", "La tripulación de una nave espacial lucha por sobrevivir contra una criatura extraterrestre mortal."));
+
+        iniciado = true;
+    }
+
+    public static Film getFilm(int posicion) {
+        return films.get(posicion);
     }
 }

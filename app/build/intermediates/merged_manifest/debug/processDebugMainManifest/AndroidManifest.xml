@@ -26,9 +26,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.FilmotecaisaiasSegura" >
+        android:theme="@style/Theme.Material3.Light" >
         <activity
-            android:name="es.pmdm.filmoteca.AboutActivity"
+            android:name="es.pmdm.filmoteca.FilmDataActivity"
+            android:exported="false" />
+        <activity
+            android:name="es.pmdm.filmoteca.FilmListActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,6 +39,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="es.pmdm.filmoteca.AboutActivity"
+            android:exported="false" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

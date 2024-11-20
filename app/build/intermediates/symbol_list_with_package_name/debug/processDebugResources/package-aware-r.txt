@@ -3215,6 +3215,7 @@ id bounceStart
 id button
 id button2
 id button3
+id button4
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3254,6 +3255,10 @@ id currentState
 id custom
 id customPanel
 id cut
+id dataAnyo
+id dataDirector
+id dataGeneroFormato
+id dataTitulo
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -3338,6 +3343,8 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageData
+id imageFilm
 id imageView
 id imageView2
 id immediateStop
@@ -3360,6 +3367,7 @@ id line3
 id linear
 id listMode
 id list_item
+id listaPelis
 id m3_side_sheet
 id main
 id marquee
@@ -3564,13 +3572,17 @@ id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
 id text
 id text2
+id textDirector
 id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textTitle
 id textTop
 id textView
 id textView2
+id textViewDirector
+id textViewanyo
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3738,6 +3750,8 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout about_activity
+layout activity_film_data
+layout activity_film_list
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3756,6 +3770,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_film
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
