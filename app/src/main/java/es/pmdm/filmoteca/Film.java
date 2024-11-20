@@ -101,4 +101,28 @@ public class Film {
         this.comments = comments;
     }
 
+    public String dataGeneroFormato() {
+        StringBuilder sb = new StringBuilder();
+        if (getFormat() == 0) {
+            sb.append("DVD");
+        } else if (getFormat() == 1) {
+            sb.append("BLURAY");
+        } else {
+            sb.append("DIGITAL");
+        }
+        sb.append(", ");
+        if (getGenre() == 0) {
+            sb.append("ACTION");
+        } else if (getGenre() == 1) {
+            sb.append("COMEDY");
+        } else if (getGenre() == 2) {
+            sb.append("DRAMA");
+        } else if (getGenre() == 3) {
+            sb.append("SCIFI");
+        } else {
+            sb.append("HORROR");
+        }
+
+        return sb.toString();
+    }
 }

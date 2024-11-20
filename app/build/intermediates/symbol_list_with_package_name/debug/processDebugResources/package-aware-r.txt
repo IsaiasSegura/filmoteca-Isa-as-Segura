@@ -3216,6 +3216,8 @@ id button
 id button2
 id button3
 id button4
+id button5
+id button6
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3293,6 +3295,7 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editTextTextMultiLine
 id edit_query
 id edit_text_id
 id elastic
@@ -3751,6 +3754,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout about_activity
 layout activity_film_data
+layout activity_film_edit
 layout activity_film_list
 layout custom_dialog
 layout design_bottom_navigation_item

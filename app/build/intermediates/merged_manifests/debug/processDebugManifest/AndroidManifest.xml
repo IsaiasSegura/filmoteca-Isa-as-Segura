@@ -28,6 +28,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Material3.Light" >
         <activity
+            android:name="es.pmdm.filmoteca.FilmEditActivity"
+            android:exported="false" />
+        <activity
             android:name="es.pmdm.filmoteca.FilmDataActivity"
             android:exported="false" />
         <activity

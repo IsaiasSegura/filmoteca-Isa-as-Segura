@@ -26,10 +26,13 @@ id button
 id button2
 id button3
 id button4
+id button5
+id button6
 id dataAnyo
 id dataDirector
 id dataGeneroFormato
 id dataTitulo
+id editTextTextMultiLine
 id imageData
 id imageFilm
 id imageView
@@ -45,6 +48,7 @@ id textViewanyo
 id toolbar
 layout about_activity
 layout activity_film_data
+layout activity_film_edit
 layout activity_film_list
 layout item_film
 mipmap ic_launcher
