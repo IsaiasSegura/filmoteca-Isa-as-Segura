@@ -69,6 +69,9 @@ public class FilmEditActivity extends AppCompatActivity {
             // Guardar los cambios en el objeto Film
             film.setTitle(editTextTitle.getText().toString());
             film.setDirector(editTextDirector.getText().toString());
+            if (editTextYear.getText().toString().isEmpty()){
+                editTextYear.setText("0");
+            }
             film.setYear(Integer.parseInt(editTextYear.getText().toString()));
             film.setGenre(spinnerGenre.getSelectedItemPosition());
             film.setFormat(spinnerFormat.getSelectedItemPosition());

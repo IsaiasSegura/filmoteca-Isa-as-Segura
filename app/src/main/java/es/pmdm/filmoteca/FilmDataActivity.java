@@ -74,4 +74,26 @@ public class FilmDataActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Film film = FilmDataSource.films.get(filmPosition);
+        // Configurar la interfaz de usuario con los detalles de la película
+        ImageView imageViewFilm = findViewById(R.id.imageData);
+        TextView textTitle = findViewById(R.id.dataTitulo);
+        TextView textDirector = findViewById(R.id.dataDirector);
+        TextView textYear = findViewById(R.id.dataAnyo);
+        TextView dataGeneroFormato =findViewById(R.id.dataGeneroFormato);
+        TextView editTextTextMultiLine = findViewById(R.id.editTextTextMultiLine);
+
+        // Cargar la imagen de la película
+        imageViewFilm.setImageResource(film.getImageResId());
+
+        // Mostrar el título, director y año
+        textTitle.setText(film.getTitle());
+        textDirector.setText(film.getDirector());
+        textYear.setText(String.valueOf(film.getYear()));
+        dataGeneroFormato.setText(film.dataGeneroFormato());
+        editTextTextMultiLine.setText(film.getComments());
+    }
 }

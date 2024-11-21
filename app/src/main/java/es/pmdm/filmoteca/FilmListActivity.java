@@ -2,9 +2,13 @@ package es.pmdm.filmoteca;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,7 +36,7 @@ public class FilmListActivity extends AppCompatActivity {
             intent.putExtra("FILM_POSITION", position);
             startActivity(intent);
         });
-
+        registerForContextMenu(list);
     }
 
     @Override
@@ -70,5 +74,33 @@ public class FilmListActivity extends AppCompatActivity {
         } else {
             return super.onOptionsItemSelected(item);
         }
+    }
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+        // Inflar el menú contextual
+        getMenuInflater().inflate(R.menu.menu_contextual, menu);
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+        int position = info.position; // Obtener la posición del elemento seleccionado
+
+        if (item.getItemId() == R.id.menu_delete) {
+            // Eliminar la película seleccionada
+            FilmDataSource.films.remove(position);
+            miAdaptador.notifyDataSetChanged(); // Actualizar el adaptador
+            Toast.makeText(this, "Película eliminada", Toast.LENGTH_SHORT).show();
+            return true;
+        } else {
+            return super.onContextItemSelected(item);
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        miAdaptador.notifyDataSetChanged();
     }
 }

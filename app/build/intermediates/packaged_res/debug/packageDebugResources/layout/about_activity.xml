@@ -23,8 +23,8 @@
 
   <TextView
       android:id="@+id/textView"
-      android:layout_width="81dp"
-      android:layout_height="29dp"
+      android:layout_width="94dp"
+      android:layout_height="31dp"
       android:text="Filmoteca"
       android:textAllCaps="false"
       android:textAppearance="@style/TextAppearance.AppCompat.Medium"
