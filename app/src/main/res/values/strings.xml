@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">filmoteca-isaiasSegura</string>
+
+    <string-array name="genero">
+        <item>Accion</item>
+        <item>Comedia</item>
+        <item>Drama</item>
+        <item>SCIFI</item>
+        <item>Horror</item>
+    </string-array>
+    <string-array name="formato">
+        <item>DVD</item>
+        <item>BLURAY</item>
+        <item>DIGITAL</item>
+    </string-array>
 </resources>

@@ -71,6 +71,6 @@ public class FilmDataActivity extends AppCompatActivity {
             startActivity(editIntent);  // Abrir actividad para editar
         });
 
-         
+
     }
 }

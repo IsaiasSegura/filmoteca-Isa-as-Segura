@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="formato">
+        <item>DVD</item>
+        <item>BLURAY</item>
+        <item>DIGITAL</item>
+    </string-array>
+    <string-array name="genero">
+        <item>Accion</item>
+        <item>Comedia</item>
+        <item>Drama</item>
+        <item>SCIFI</item>
+        <item>Horror</item>
+    </string-array>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">filmoteca-isaiasSegura</string>

@@ -77,6 +77,8 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array formato
+array genero
 attr SharedValue
 attr SharedValueId
 attr actionBarDivider
@@ -3118,6 +3120,7 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id Cancelar
 id FUNCTION
 id META
 id NO_DEBUG
@@ -3218,7 +3221,9 @@ id button3
 id button4
 id button5
 id button6
+id buttonCaptutaImg
 id buttonPanel
+id buttonSeleccionarImg
 id cache_measures
 id callMeasure
 id cancel_button
@@ -3295,7 +3300,12 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editAnyo
+id editAutor
+id editEnlace
 id editTextTextMultiLine
+id editTextTextMultiLinedescrpcion
+id editTitulo
 id edit_query
 id edit_text_id
 id elastic
@@ -3333,6 +3343,7 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
+id guardar
 id header_title
 id hide_ime_id
 id hideable
@@ -3350,6 +3361,7 @@ id imageData
 id imageFilm
 id imageView
 id imageView2
+id imageView4
 id immediateStop
 id included
 id indeterminate
@@ -3538,6 +3550,8 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinnerFormato
+id spinnerGenero
 id spline
 id split_action_bar
 id spread

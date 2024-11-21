@@ -94,7 +94,11 @@ public class Film {
     }
 
     public String getComments() {
-        return comments;
+        if (comments.isEmpty() || comments.isBlank()) {
+            return " ";
+        } else {
+            return comments;
+        }
     }
 
     public void setComments(String comments) {

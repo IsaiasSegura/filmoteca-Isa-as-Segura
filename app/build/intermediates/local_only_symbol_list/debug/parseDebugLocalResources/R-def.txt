@@ -1,5 +1,7 @@
 R_DEF: Internal format may change without notice
 local
+array formato
+array genero
 color black
 color white
 drawable alien
@@ -22,23 +24,35 @@ drawable the_dark_knight
 drawable the_lion_king
 drawable the_shining
 drawable titanic
+id Cancelar
 id button
 id button2
 id button3
 id button4
 id button5
 id button6
+id buttonCaptutaImg
+id buttonSeleccionarImg
 id dataAnyo
 id dataDirector
 id dataGeneroFormato
 id dataTitulo
+id editAnyo
+id editAutor
+id editEnlace
 id editTextTextMultiLine
+id editTextTextMultiLinedescrpcion
+id editTitulo
+id guardar
 id imageData
 id imageFilm
 id imageView
 id imageView2
+id imageView4
 id listaPelis
 id main
+id spinnerFormato
+id spinnerGenero
 id textDirector
 id textTitle
 id textView

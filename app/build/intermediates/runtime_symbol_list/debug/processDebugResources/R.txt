@@ -76,6 +76,8 @@ int animator mtrl_fab_hide_motion_spec 0x7f02001e
 int animator mtrl_fab_show_motion_spec 0x7f02001f
 int animator mtrl_fab_transformation_sheet_collapse_spec 0x7f020020
 int animator mtrl_fab_transformation_sheet_expand_spec 0x7f020021
+int array formato 0x7f130000
+int array genero 0x7f130001
 int attr SharedValue 0x7f030000
 int attr SharedValueId 0x7f030001
 int attr actionBarDivider 0x7f030002
@@ -3117,6 +3119,7 @@ int id ALT 0x7f080000
 int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002
 int id CTRL 0x7f080003
+int id Cancelar 0x7f08020f
 int id FUNCTION 0x7f080004
 int id META 0x7f080005
 int id NO_DEBUG 0x7f080006
@@ -3217,7 +3220,9 @@ int id button3 0x7f080064
 int id button4 0x7f080201
 int id button5 0x7f080209
 int id button6 0x7f08020a
+int id buttonCaptutaImg 0x7f080210
 int id buttonPanel 0x7f080065
+int id buttonSeleccionarImg 0x7f080211
 int id cache_measures 0x7f080066
 int id callMeasure 0x7f080067
 int id cancel_button 0x7f080068
@@ -3294,7 +3299,12 @@ int id easeInOut 0x7f0800aa
 int id easeOut 0x7f0800ab
 int id east 0x7f0800ac
 int id edge 0x7f0800ad
+int id editAnyo 0x7f080212
+int id editAutor 0x7f080213
+int id editEnlace 0x7f080214
 int id editTextTextMultiLine 0x7f08020b
+int id editTextTextMultiLinedescrpcion 0x7f080215
+int id editTitulo 0x7f080216
 int id edit_query 0x7f0800ae
 int id edit_text_id 0x7f0800af
 int id elastic 0x7f0800b0
@@ -3332,6 +3342,7 @@ int id graph_wrap 0x7f0800cf
 int id group_divider 0x7f0800d0
 int id grouping 0x7f0800d1
 int id groups 0x7f0800d2
+int id guardar 0x7f080217
 int id header_title 0x7f0800d3
 int id hide_ime_id 0x7f0800d4
 int id hideable 0x7f0800d5
@@ -3349,6 +3360,7 @@ int id imageData 0x7f080206
 int id imageFilm 0x7f0801fd
 int id imageView 0x7f0800e0
 int id imageView2 0x7f0800e1
+int id imageView4 0x7f08020e
 int id immediateStop 0x7f0800e2
 int id included 0x7f0800e3
 int id indeterminate 0x7f0800e4
@@ -3537,6 +3549,8 @@ int id snapMargins 0x7f080199
 int id south 0x7f08019a
 int id spacer 0x7f08019b
 int id special_effects_controller_view_tag 0x7f08019c
+int id spinnerFormato 0x7f080218
+int id spinnerGenero 0x7f080219
 int id spline 0x7f08019d
 int id split_action_bar 0x7f08019e
 int id spread 0x7f08019f
