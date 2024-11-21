@@ -51,6 +51,8 @@ id imageView2
 id imageView4
 id listaPelis
 id main
+id menu_acercaDe
+id menu_anyadirPeli
 id spinnerFormato
 id spinnerGenero
 id textDirector
@@ -65,6 +67,7 @@ layout activity_film_data
 layout activity_film_edit
 layout activity_film_list
 layout item_film
+menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name

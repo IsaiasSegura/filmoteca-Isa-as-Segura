@@ -3409,6 +3409,8 @@ int id material_timepicker_ok_button 0x7f08010d
 int id material_timepicker_view 0x7f08010e
 int id material_value_index 0x7f08010f
 int id matrix 0x7f080110
+int id menu_acercaDe 0x7f08021a
+int id menu_anyadirPeli 0x7f08021b
 int id message 0x7f080111
 int id middle 0x7f080112
 int id mini 0x7f080113
@@ -3849,6 +3851,7 @@ int layout select_dialog_item_material 0x7f0b0068
 int layout select_dialog_multichoice_material 0x7f0b0069
 int layout select_dialog_singlechoice_material 0x7f0b006a
 int layout support_simple_spinner_dropdown_item 0x7f0b006b
+int menu menu_main 0x7f140000
 int mipmap ic_launcher 0x7f0d0000
 int mipmap ic_launcher_round 0x7f0d0001
 int plurals mtrl_badge_content_description 0x7f0e0000

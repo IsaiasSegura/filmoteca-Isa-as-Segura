@@ -9,7 +9,7 @@ public class FilmDataSource {
         Film film = new Film();
         films = new ArrayList<Film>();
 
-        films.add(new Film(R.drawable.el_padrino, "El Padrino", 1972, "Francis Coppola", Film.GENRE_DRAMA, Film.FORMAT_DVD, "https://www.imdb.com/title/tt0068646/", "El envejecido patriarca de una dinastía del crimen organizado en la ciudad de Nueva York de la posguerra transfiere el control de su imperio clandestino a su reacio hijo menor."));
+        films.add(new Film(R.drawable.el_padrino, "The Godfather", 1972, "Francis Coppola", Film.GENRE_DRAMA, Film.FORMAT_DVD, "https://www.imdb.com/title/tt0068646/", "El envejecido patriarca de una dinastía del crimen organizado en la ciudad de Nueva York de la posguerra transfiere el control de su imperio clandestino a su reacio hijo menor."));
         films.add(new Film(R.drawable.interestelar, "Interestelar", 2014, "Christopher Nolan", Film.GENRE_SCIFI, Film.FORMAT_DIGITAL, "https://www.imdb.com/title/tt0816692/", "Un equipo de exploradores viaja a través de un agujero de gusano en un intento por garantizar la supervivencia de la humanidad."));
         films.add(new Film(R.drawable.pulp_fiction, "Pulp Fiction", 1994, "Quentin Tarantino", Film.GENRE_ACTION, Film.FORMAT_BLURAY, "https://www.imdb.com/title/tt0110912/", "La vida de dos sicarios, un boxeador y otros personajes se entrelazan en una narrativa no lineal llena de violencia y humor negro."));
         films.add(new Film(R.drawable.inception, "Inception", 2010, "Christopher Nolan", Film.GENRE_SCIFI, Film.FORMAT_DIGITAL, "https://www.imdb.com/title/tt1375666/", "Un ladrón que roba secretos a través de sueños es contratado para plantar una idea en la mente de un empresario."));
