@@ -12,12 +12,12 @@
         "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\the_lion_king.webp"
     },
     {
-        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_interestelar.jpg.flat",
-        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\interestelar.jpg"
-    },
-    {
         "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_interestelar.jpg.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\interestelar.jpg"
     },
     {
         "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
@@ -42,10 +42,6 @@
     {
         "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\layout_item_film.xml.flat",
         "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\layout\\item_film.xml"
-    },
-    {
-        "merged": "es.pmdm.filmoteca.app-debug-31:/layout-land_activity_film_data.xml.flat",
-        "source": "es.pmdm.filmoteca.app-main-33:/layout-land/activity_film_data.xml"
     },
     {
         "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\layout_activity_film_list.xml.flat",
@@ -80,6 +76,10 @@
         "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\xml\\data_extraction_rules.xml"
     },
     {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\layout-land_activity_film_edit.xml.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\layout-land\\activity_film_edit.xml"
+    },
+    {
         "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
@@ -92,12 +92,20 @@
         "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\ic_launcher_background.xml"
     },
     {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\layout-land_about_activity.xml.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\layout-land\\about_activity.xml"
+    },
+    {
         "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\menu_menu_main.xml.flat",
         "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\layout-land_activity_film_data.xml.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\layout-land\\activity_film_data.xml"
     },
     {
         "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_cinema.png.flat",
@@ -126,6 +134,10 @@
     {
         "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\layout_activity_film_data.xml.flat",
         "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\layout\\activity_film_data.xml"
+    },
+    {
+        "merged": "es.pmdm.filmoteca.app-debug-31:/layout-land_activity_film_edit.xml.flat",
+        "source": "es.pmdm.filmoteca.app-main-33:/layout-land/activity_film_edit.xml"
     },
     {
         "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",

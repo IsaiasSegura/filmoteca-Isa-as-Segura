@@ -13,4 +13,5 @@
         <item>BLURAY</item>
         <item>DIGITAL</item>
     </string-array>
+    <string name="saveChanges">Save Changes</string>
 </resources>
