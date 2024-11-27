@@ -14,4 +14,18 @@
         <item>DIGITAL</item>
     </string-array>
     <string name="saveChanges">Save Changes</string>
+    <string name="cancelar">cancel</string>
+    <string name="capturaImagen">take picture</string>
+    <string name="seleccionarImagen">select image</string>
+    <string name="verImd">see on IMD</string>
+    <string name="volverPrincipal">Back to main</string>
+    <string name="editarPelicula">Edit Film</string>
+    <string name="año">Year</string>
+    <string name="filmoteca">Film library</string>
+    <string name="creadoPor">Created by Isaias Segura</string>
+    <string name="irSitioWeb">Go to website</string>
+    <string name="soporte">Support</string>
+    <string name="volver">Back</string>
+    <string name="tituloPelicula">Film Title</string>
+    <string name="nombreDirector">Director: Director\'s name</string>
 </resources>

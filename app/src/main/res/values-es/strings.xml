@@ -2,4 +2,18 @@
 <resources>
     <string name="app_name">filmoteca-isaiasSegura</string>
     <string name="saveChanges">Guardar Cambios</string>
+    <string name="cancelar">cancelar</string>
+    <string name="capturaImagen">tomar imagen</string>
+    <string name="seleccionarImagen">seleccionar imagen</string>
+    <string name="verImd">Ver en IMD</string>
+    <string name="volverPrincipal">Volver al principal</string>
+    <string name="editarPelicula">Editar Pelicula</string>
+    <string name="año">Año</string>
+    <string name="filmoteca">Filmoteca</string>
+    <string name="creadoPor">Creado por Isaias Segura</string>
+    <string name="irSitioWeb">Ir al sitio web</string>
+    <string name="soporte">Soporte</string>
+    <string name="volver">Volver</string>
+    <string name="tituloPelicula">Titulo de la pelicula</string>
+    <string name="nombreDirector">Director: Nombre del Director</string>
 </resources>

@@ -3900,6 +3900,8 @@ int string call_notification_hang_up_action 0x7f110027
 int string call_notification_incoming_text 0x7f110028
 int string call_notification_ongoing_text 0x7f110029
 int string call_notification_screening_text 0x7f11002a
+int string cancelar 0x7f1100a8
+int string capturaImagen 0x7f1100a9
 int string character_counter_content_description 0x7f11002b
 int string character_counter_overflowed_content_description 0x7f11002c
 int string character_counter_pattern 0x7f11002d
@@ -4022,6 +4024,7 @@ int string search_menu_title 0x7f1100a0
 int string searchbar_scrolling_view_behavior 0x7f1100a1
 int string searchview_clear_text_content_description 0x7f1100a2
 int string searchview_navigation_content_description 0x7f1100a3
+int string seleccionarImagen 0x7f1100aa
 int string side_sheet_accessibility_pane_title 0x7f1100a4
 int string side_sheet_behavior 0x7f1100a5
 int string status_bar_notification_info_overflow 0x7f1100a6

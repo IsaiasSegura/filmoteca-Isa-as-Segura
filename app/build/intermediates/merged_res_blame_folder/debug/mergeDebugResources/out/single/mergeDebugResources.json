@@ -40,6 +40,10 @@
         "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\layout\\activity_film_edit.xml"
     },
     {
+        "merged": "es.pmdm.filmoteca.app-debug-31:/layout_activity_film_edit.xml.flat",
+        "source": "es.pmdm.filmoteca.app-main-33:/layout/activity_film_edit.xml"
+    },
+    {
         "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\layout_item_film.xml.flat",
         "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\layout\\item_film.xml"
     },
