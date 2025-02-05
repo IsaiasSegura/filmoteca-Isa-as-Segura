@@ -3,11 +3,13 @@ package es.pmdm.filmoteca;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -60,7 +62,7 @@ public class FilmListActivity extends AppCompatActivity {
             Film newFilm = new Film(
                     R.drawable.cinema,
                     "Nueva Película",
-                    2024,
+                    2025,
                     "Director Desconocido",
                     Film.GENRE_ACTION,
                     Film.FORMAT_DVD,
@@ -91,7 +93,7 @@ public class FilmListActivity extends AppCompatActivity {
             // Eliminar la película seleccionada
             FilmDataSource.films.remove(position);
             miAdaptador.notifyDataSetChanged(); // Actualizar el adaptador
-            Toast.makeText(this, "Película eliminada", Toast.LENGTH_SHORT).show();
+            showCustomToast("Película eliminada");
             return true;
         } else {
             return super.onContextItemSelected(item);
@@ -102,5 +104,18 @@ public class FilmListActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         miAdaptador.notifyDataSetChanged();
+    }
+
+    private void showCustomToast(String message) {
+        LayoutInflater inflater = getLayoutInflater();
+        View layout = inflater.inflate(R.layout.toast_personalizado, findViewById(R.id.custom_toast_container));
+
+        TextView text = layout.findViewById(R.id.text);
+        text.setText(message);
+
+        Toast toast = new Toast(getApplicationContext());
+        toast.setDuration(Toast.LENGTH_SHORT);
+        toast.setView(layout);
+        toast.show();
     }
 }

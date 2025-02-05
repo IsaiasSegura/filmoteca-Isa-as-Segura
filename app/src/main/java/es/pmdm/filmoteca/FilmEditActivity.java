@@ -1,23 +1,29 @@
 package es.pmdm.filmoteca;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.provider.MediaStore;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 public class FilmEditActivity extends AppCompatActivity {
 
+    private static final int CAMERA_PERMISSION_CODE = 100;
     private int filmPosition;
     private Film film;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,24 +58,26 @@ public class FilmEditActivity extends AppCompatActivity {
         editTextDescription.setText(film.getComments());
         editEnlace.setText(film.getImdbUrl());
 
-        // Configurar los Spinners (puedes usar adaptadores para los géneros y formatos)
+        // Configurar los Spinners
         spinnerGenre.setSelection(film.getGenre());
         spinnerFormat.setSelection(film.getFormat());
 
-        //Configurar los botones seleccionar y captura con el Toast “Funcionalidad no implementada”
+        // Configurar los botones seleccionar y captura con el Toast
         buttonCaptura.setOnClickListener(view -> {
-            Toast.makeText(this, "Funcionalidad no implementada.", Toast.LENGTH_SHORT).show();
+            if (checkPermission(Manifest.permission.CAMERA, CAMERA_PERMISSION_CODE)) {
+                openCamera();
+            }
         });
-        buttonSeleccionarImg.setOnClickListener(view -> {
-            Toast.makeText(this, "Funcionalidad no implementada", Toast.LENGTH_SHORT).show();
-        });
+
+        buttonSeleccionarImg.setOnClickListener(view ->
+                showCustomToast("Funcionalidad no implementada"));
 
         // Configurar el botón "Guardar"
         buttonSave.setOnClickListener(v -> {
             // Guardar los cambios en el objeto Film
             film.setTitle(editTextTitle.getText().toString());
             film.setDirector(editTextDirector.getText().toString());
-            if (editTextYear.getText().toString().isEmpty()){
+            if (editTextYear.getText().toString().isEmpty()) {
                 editTextYear.setText("0");
             }
             film.setYear(Integer.parseInt(editTextYear.getText().toString()));
@@ -78,7 +86,7 @@ public class FilmEditActivity extends AppCompatActivity {
             film.setComments(editTextDescription.getText().toString());
 
             // Mostrar mensaje de confirmación
-            Toast.makeText(this, "Cambios aplicados correctamente.", Toast.LENGTH_SHORT).show();
+            showCustomToast("Cambios aplicados correctamente.");
 
             // Regresar a la actividad anterior
             finish();
@@ -87,11 +95,52 @@ public class FilmEditActivity extends AppCompatActivity {
         // Configurar el botón "Cancelar"
         buttonCancel.setOnClickListener(v -> {
             // Mostrar mensaje de cancelación
-            Toast.makeText(this, "Los cambios han sido cancelados.", Toast.LENGTH_SHORT).show();
+            showCustomToast("Los cambios han sido cancelados.");
 
             // Regresar sin guardar cambios
             finish();
         });
+    }
+
+    private boolean checkPermission(String permission, int requestCode) {
+        if (ContextCompat.checkSelfPermission(this, permission) == PackageManager.PERMISSION_GRANTED) {
+            return true;
+        } else {
+            ActivityCompat.requestPermissions(this, new String[]{permission}, requestCode);
+            return false;
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == CAMERA_PERMISSION_CODE) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                openCamera();
+            } else {
+                showCustomToast( "Permiso de cámara denegado");
+            }
+        }
+    }
+
+    private void openCamera() {
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+    }
+
+    private void showCustomToast(String message) {
+        LayoutInflater inflater = getLayoutInflater();
+        View layout = inflater.inflate(R.layout.toast_personalizado, findViewById(R.id.custom_toast_container));
+
+        TextView text = layout.findViewById(R.id.text);
+        text.setText(message);
+
+        Toast toast = new Toast(getApplicationContext());
+        toast.setDuration(Toast.LENGTH_SHORT);
+        toast.setView(layout);
+        toast.show();
     }
 
 }

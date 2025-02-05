@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">filmoteca-isaiasSegura</string>
-    <string name="cancelar">cancelar</string>
-    <string name="capturaImagen">tomar imagen</string>
-    <string name="saveChanges">Guardar Cambios</string>
-    <string name="seleccionarImagen">seleccionar imagen</string>
-</resources>
