@@ -3415,6 +3415,7 @@ int id matrix 0x7f090125
 int id menu_acercaDe 0x7f090126
 int id menu_anyadirPeli 0x7f090127
 int id menu_delete 0x7f090128
+int id menu_share 0x7f09021d
 int id message 0x7f090129
 int id middle 0x7f09012a
 int id mini 0x7f09012b

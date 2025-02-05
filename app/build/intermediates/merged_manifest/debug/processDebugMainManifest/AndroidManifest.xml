@@ -11,9 +11,13 @@
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <permission
         android:name="es.pmdm.filmoteca.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"

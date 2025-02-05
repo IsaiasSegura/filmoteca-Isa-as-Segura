@@ -3416,6 +3416,7 @@ id matrix
 id menu_acercaDe
 id menu_anyadirPeli
 id menu_delete
+id menu_share
 id message
 id middle
 id mini

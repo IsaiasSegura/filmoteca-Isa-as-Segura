@@ -57,6 +57,7 @@ id main
 id menu_acercaDe
 id menu_anyadirPeli
 id menu_delete
+id menu_share
 id spinnerFormato
 id spinnerGenero
 id text
