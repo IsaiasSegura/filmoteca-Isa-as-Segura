@@ -8,4 +8,7 @@
     <item
         android:id="@+id/menu_anyadirPeli"
         android:title="Añadir película" />
+    <item
+        android:id="@+id/menu_settings"
+        android:title="Ajustes" />
 </menu>

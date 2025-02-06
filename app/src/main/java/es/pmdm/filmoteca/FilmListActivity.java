@@ -1,10 +1,7 @@
 package es.pmdm.filmoteca;
 
-import android.Manifest;
 import android.content.ActivityNotFoundException;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.ContextMenu;
@@ -17,11 +14,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 
 import java.io.File;
 
@@ -78,6 +72,11 @@ public class FilmListActivity extends AppCompatActivity {
             FilmDataSource.saveNewFilm(newFilm);
             miAdaptador.notifyDataSetChanged();
             return true;
+        } else if (itemId == R.id.menu_settings) {
+            // Navegar a la actividad de ajustes
+            Intent intent = new Intent(this, SettingsActivity.class);
+            startActivity(intent);
+            return true;
         } else {
             return super.onOptionsItemSelected(item);
         }
@@ -107,39 +106,14 @@ public class FilmListActivity extends AppCompatActivity {
         }
     }
 
-    /*
-    private void checkSmsPermission() {
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.SEND_SMS}, PERMISSION_SEND_SMS);
-        } else {
-            showShareDialog();
-        }
-    }
-     */
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == PERMISSION_SEND_SMS) {
-            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                showShareDialog();
-            } else {
-                showCustomToast("Permiso para enviar SMS denegado");
-            }
-        }
-    }
-
     private void showShareDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Recomendar Película")
-                .setItems(new String[]{"Compartir por SMS", "Compartir por WhatsApp"}, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        if (which == 0) {
-                            enviarViaAppMensajes("123456789", "Te recomiendo la película: " + selectedFilmTitle);
-                        } else {
-                            enviarViaWhatsApp("123456789", "Te recomiendo la película: " + selectedFilmTitle);
-                        }
+                .setItems(new String[]{"Compartir por SMS", "Compartir por WhatsApp"}, (dialog, which) -> {
+                    if (which == 0) {
+                        enviarViaAppMensajes("123456789", "Te recomiendo la película: " + selectedFilmTitle);
+                    } else {
+                        enviarViaWhatsApp("123456789", "Te recomiendo la película: " + selectedFilmTitle);
                     }
                 })
                 .show();

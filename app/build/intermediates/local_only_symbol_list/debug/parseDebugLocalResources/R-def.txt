@@ -37,6 +37,7 @@ id buttonCaptutaImg
 id buttonLogin
 id buttonRegister
 id buttonSeleccionarImg
+id checkBoxRegistrationEnabled
 id custom_toast_container
 id dataAnyo
 id dataDirector
@@ -61,6 +62,7 @@ id main
 id menu_acercaDe
 id menu_anyadirPeli
 id menu_delete
+id menu_settings
 id menu_share
 id spinnerFormato
 id spinnerGenero
@@ -79,6 +81,7 @@ layout activity_film_edit
 layout activity_film_list
 layout activity_login
 layout activity_register
+layout activity_settings
 layout item_film
 layout toast_personalizado
 menu menu_contextual

@@ -1,6 +1,8 @@
 package es.pmdm.filmoteca;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,6 +15,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText editTextUsername, editTextPassword;
     private Button buttonLogin, buttonRegister;
     private DatabaseHelper dbHelper;
+    private SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,11 +23,20 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         dbHelper = new DatabaseHelper(this);
+        sharedPreferences = getSharedPreferences("AppPreferences", Context.MODE_PRIVATE);
 
         editTextUsername = findViewById(R.id.editTextUsername);
         editTextPassword = findViewById(R.id.editTextPassword);
         buttonLogin = findViewById(R.id.buttonLogin);
         buttonRegister = findViewById(R.id.buttonRegister);
+
+        // Cargar el último "Username" válido
+        String lastUsername = sharedPreferences.getString("lastUsername", "");
+        editTextUsername.setText(lastUsername);
+
+        // Verificar si el botón de registro debe estar habilitado
+        boolean isRegistrationEnabled = sharedPreferences.getBoolean("registrationEnabled", true);
+        buttonRegister.setEnabled(isRegistrationEnabled);
 
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +45,12 @@ public class LoginActivity extends AppCompatActivity {
                 String password = editTextPassword.getText().toString().trim();
 
                 if (dbHelper.checkUser(username, password)) {
+                    // Guardar el último "Username" válido
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.putString("lastUsername", username);
+                    editor.apply();
+
+                    // Redirigir a la pantalla principal
                     Intent intent = new Intent(LoginActivity.this, FilmListActivity.class);
                     startActivity(intent);
                     finish();
@@ -46,18 +64,8 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
-                startActivityForResult(intent, 1); // Usamos startActivityForResult
+                startActivity(intent);
             }
         });
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if (requestCode == 1 && resultCode == RESULT_OK) {
-            String username = data.getStringExtra("username");
-            editTextUsername.setText(username); // Establece el nombre de usuario en el campo de texto
-        }
     }
 }

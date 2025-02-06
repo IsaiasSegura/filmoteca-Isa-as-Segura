@@ -39,6 +39,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Material3.Light" >
         <activity
+            android:name="es.pmdm.filmoteca.SettingsActivity"
+            android:exported="false" />
+        <activity
             android:name="es.pmdm.filmoteca.RegisterActivity"
             android:exported="false" />
         <activity
@@ -58,8 +61,7 @@
             android:exported="false" />
         <activity
             android:name="es.pmdm.filmoteca.FilmListActivity"
-            android:exported="false" >
-        </activity>
+            android:exported="false" />
         <activity
             android:name="es.pmdm.filmoteca.AboutActivity"
             android:exported="false" />
