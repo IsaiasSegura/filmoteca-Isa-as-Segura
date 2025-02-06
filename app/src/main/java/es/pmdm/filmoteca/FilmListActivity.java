@@ -23,6 +23,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import java.io.File;
+
 public class FilmListActivity extends AppCompatActivity {
     private static final int PERMISSION_SEND_SMS = 1;
     private FilmAdapter miAdaptador;
@@ -33,11 +35,11 @@ public class FilmListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_film_list);
-        if (!FilmDataSource.iniciado) {
-            FilmDataSource.Initialize();
-        }
+        String fileName = "films.dat";
+        File filmsFile = new File(getFilesDir(), fileName);
+        FilmDataSource.Initialize(filmsFile);
         list = findViewById(R.id.listaPelis);
-        miAdaptador = new FilmAdapter(this, R.layout.item_film, FilmDataSource.films);
+        miAdaptador = new FilmAdapter(this, R.layout.item_film, FilmDataSource.getAllFilms());
         list.setAdapter(miAdaptador);
 
         list.setOnItemClickListener((adapterView, view, position, id) -> {
@@ -73,7 +75,7 @@ public class FilmListActivity extends AppCompatActivity {
                     "https://www.imdb.com",
                     "Descripción de la nueva película."
             );
-            FilmDataSource.films.add(0, newFilm);
+            FilmDataSource.saveNewFilm(newFilm);
             miAdaptador.notifyDataSetChanged();
             return true;
         } else {
@@ -91,10 +93,9 @@ public class FilmListActivity extends AppCompatActivity {
     public boolean onContextItemSelected(MenuItem item) {
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
         int position = info.position;
-        selectedFilmTitle = FilmDataSource.films.get(position).getTitle();
-
+        selectedFilmTitle = FilmDataSource.getFilm(position).getTitle();
         if (item.getItemId() == R.id.menu_delete) {
-            FilmDataSource.films.remove(position);
+            FilmDataSource.removeFilmByPosition(position);
             miAdaptador.notifyDataSetChanged();
             showCustomToast("Película eliminada");
             return true;

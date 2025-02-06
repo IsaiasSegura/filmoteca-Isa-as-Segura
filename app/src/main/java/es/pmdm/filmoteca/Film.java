@@ -1,6 +1,12 @@
 package es.pmdm.filmoteca;
 
-public class Film {
+import java.io.Serial;
+import java.io.Serializable;
+
+public class Film implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
+
     // Tipos de formatos
     // Almacena el índice en el que se encuentra el valor de cada formato en el recurso arrarys.
     public final static int FORMAT_DVD = 0;

@@ -34,7 +34,7 @@ public class FilmEditActivity extends AppCompatActivity {
         filmPosition = intent.getIntExtra("FILM_POSITION", 0);
 
         // Obtener la película desde FilmDataSource
-        film = FilmDataSource.films.get(filmPosition);
+        film = FilmDataSource.getFilm(filmPosition);
 
         // Referencias a los componentes
         ImageView imageViewFilm = findViewById(R.id.imageView4);
@@ -85,6 +85,7 @@ public class FilmEditActivity extends AppCompatActivity {
             film.setFormat(spinnerFormat.getSelectedItemPosition());
             film.setComments(editTextDescription.getText().toString());
 
+            FilmDataSource.setFilm(filmPosition, film);
             // Mostrar mensaje de confirmación
             showCustomToast("Cambios aplicados correctamente.");
 

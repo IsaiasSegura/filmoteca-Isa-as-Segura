@@ -27,7 +27,7 @@ public class FilmDataActivity extends AppCompatActivity {
         filmPosition = intent.getIntExtra("FILM_POSITION", 0);  // Obtenemos la posición
 
         // Obtener la película desde FilmDataSource
-        Film film = FilmDataSource.films.get(filmPosition);
+        Film film = FilmDataSource.getFilm(filmPosition);
 
         // Configurar la interfaz de usuario con los detalles de la película
         ImageView imageViewFilm = findViewById(R.id.imageData);
@@ -77,7 +77,7 @@ public class FilmDataActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        Film film = FilmDataSource.films.get(filmPosition);
+        Film film = FilmDataSource.getFilm(filmPosition);
         // Configurar la interfaz de usuario con los detalles de la película
         ImageView imageViewFilm = findViewById(R.id.imageData);
         TextView textTitle = findViewById(R.id.dataTitulo);
