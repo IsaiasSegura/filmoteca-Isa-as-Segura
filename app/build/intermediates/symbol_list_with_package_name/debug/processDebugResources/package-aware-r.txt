@@ -3224,7 +3224,9 @@ id button4
 id button5
 id button6
 id buttonCaptutaImg
+id buttonLogin
 id buttonPanel
+id buttonRegister
 id buttonSeleccionarImg
 id cache_measures
 id callMeasure
@@ -3306,8 +3308,10 @@ id edge
 id editAnyo
 id editAutor
 id editEnlace
+id editTextPassword
 id editTextTextMultiLine
 id editTextTextMultiLinedescrpcion
+id editTextUsername
 id editTitulo
 id edit_query
 id edit_text_id
@@ -3778,6 +3782,8 @@ layout about_activity
 layout activity_film_data
 layout activity_film_edit
 layout activity_film_list
+layout activity_login
+layout activity_register
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

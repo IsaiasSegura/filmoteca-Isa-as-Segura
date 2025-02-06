@@ -107,6 +107,7 @@ public class FilmListActivity extends AppCompatActivity {
         }
     }
 
+    /*
     private void checkSmsPermission() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.SEND_SMS}, PERMISSION_SEND_SMS);
@@ -114,6 +115,7 @@ public class FilmListActivity extends AppCompatActivity {
             showShareDialog();
         }
     }
+     */
 
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {

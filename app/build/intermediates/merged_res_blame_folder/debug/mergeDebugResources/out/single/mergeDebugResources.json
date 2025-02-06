@@ -32,6 +32,10 @@
         "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\layout\\activity_film_list.xml"
     },
     {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\layout\\activity_login.xml"
+    },
+    {
         "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_star_wars.jpg.flat",
         "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\star_wars.jpg"
     },
@@ -72,6 +76,10 @@
         "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\pulp_fiction.jpg"
     },
     {
+        "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\layout\\activity_register.xml"
+    },
+    {
         "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_the_dark_knight.jpg.flat",
         "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\the_dark_knight.jpg"
     },
@@ -90,10 +98,6 @@
     {
         "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\drawable_forrest_gump.jpg.flat",
         "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\drawable\\forrest_gump.jpg"
-    },
-    {
-        "merged": "es.pmdm.filmoteca.app-debug-31:/menu_menu_contextual.xml.flat",
-        "source": "es.pmdm.filmoteca.app-main-33:/menu/menu_contextual.xml"
     },
     {
         "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\mipmap-hdpi_ic_launcher_round.webp.flat",
@@ -162,6 +166,10 @@
     {
         "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-main-33:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "es.pmdm.filmoteca.app-debug-31:/layout_activity_register.xml.flat",
+        "source": "es.pmdm.filmoteca.app-main-33:/layout/activity_register.xml"
     },
     {
         "merged": "C:\\Users\\isasegber2\\.gradle\\daemon\\8.7\\es.pmdm.filmoteca.app-debug-31:\\menu_menu_main.xml.flat",

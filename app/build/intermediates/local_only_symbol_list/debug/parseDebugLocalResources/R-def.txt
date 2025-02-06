@@ -34,6 +34,8 @@ id button4
 id button5
 id button6
 id buttonCaptutaImg
+id buttonLogin
+id buttonRegister
 id buttonSeleccionarImg
 id custom_toast_container
 id dataAnyo
@@ -43,8 +45,10 @@ id dataTitulo
 id editAnyo
 id editAutor
 id editEnlace
+id editTextPassword
 id editTextTextMultiLine
 id editTextTextMultiLinedescrpcion
+id editTextUsername
 id editTitulo
 id guardar
 id imageData
@@ -73,6 +77,8 @@ layout about_activity
 layout activity_film_data
 layout activity_film_edit
 layout activity_film_list
+layout activity_login
+layout activity_register
 layout item_film
 layout toast_personalizado
 menu menu_contextual

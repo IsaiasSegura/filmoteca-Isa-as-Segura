@@ -39,6 +39,18 @@
         android:testOnly="true"
         android:theme="@style/Theme.Material3.Light" >
         <activity
+            android:name="es.pmdm.filmoteca.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name="es.pmdm.filmoteca.LoginActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="es.pmdm.filmoteca.FilmEditActivity"
             android:exported="false" />
         <activity
@@ -46,12 +58,7 @@
             android:exported="false" />
         <activity
             android:name="es.pmdm.filmoteca.FilmListActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="false" >
         </activity>
         <activity
             android:name="es.pmdm.filmoteca.AboutActivity"
