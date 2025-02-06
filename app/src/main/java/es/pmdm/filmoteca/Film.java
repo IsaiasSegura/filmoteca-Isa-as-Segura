@@ -14,6 +14,7 @@ public class Film {
     public final static int GENRE_SCIFI = 3;
     public final static int GENRE_HORROR = 4;
     // Propiedades de la clase
+    private int id;
     private int imageResId;
     private String title;
     private String director;
@@ -35,6 +36,25 @@ public class Film {
         this.format = format;
         this.imdbUrl = imdbUrl;
         this.comments = comments;
+    }
+
+    public Film(String comments, int year, String title, String imdbUrl, int imageResId, int id, int genre, int format, String director) {
+        this.comments = comments;
+        this.year = year;
+        this.title = title;
+        this.imdbUrl = imdbUrl;
+        this.imageResId = imageResId;
+        this.id = id;
+        this.genre = genre;
+        this.format = format;
+        this.director = director;
+    }
+
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getImageResId() {
