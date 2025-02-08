@@ -2,8 +2,10 @@ package es.pmdm.filmoteca;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -24,6 +26,7 @@ public class FilmListActivity extends AppCompatActivity {
     private FilmAdapter miAdaptador;
     private ListView list;
     private String selectedFilmTitle;
+    private static final int PICK_CONTACT_REQUEST = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,8 +58,7 @@ public class FilmListActivity extends AppCompatActivity {
         int itemId = item.getItemId();
 
         if (itemId == R.id.menu_acercaDe) {
-            Intent intent = new Intent(this, AboutActivity.class);
-            startActivity(intent);
+            startActivity(new Intent(this, AboutActivity.class));
             return true;
         } else if (itemId == R.id.menu_anyadirPeli) {
             Film newFilm = new Film(
@@ -73,14 +75,16 @@ public class FilmListActivity extends AppCompatActivity {
             miAdaptador.notifyDataSetChanged();
             return true;
         } else if (itemId == R.id.menu_settings) {
-            // Navegar a la actividad de ajustes
-            Intent intent = new Intent(this, SettingsActivity.class);
-            startActivity(intent);
+            startActivity(new Intent(this, SettingsActivity.class));
+            return true;
+        } else if (itemId == R.id.menu_mas_info) {
+            startActivity(new Intent(this, MoreActivity.class));  // Abre la actividad de video
             return true;
         } else {
             return super.onOptionsItemSelected(item);
         }
     }
+
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
@@ -109,15 +113,23 @@ public class FilmListActivity extends AppCompatActivity {
     private void showShareDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Recomendar Película")
-                .setItems(new String[]{"Compartir por SMS", "Compartir por WhatsApp"}, (dialog, which) -> {
+                .setItems(new String[]{"Seleccionar Contacto", "Compartir por WhatsApp"}, (dialog, which) -> {
                     if (which == 0) {
-                        enviarViaAppMensajes("123456789", "Te recomiendo la película: " + selectedFilmTitle);
+                        seleccionarContacto();  // Llamamos al método para abrir contactos
                     } else {
-                        enviarViaWhatsApp("123456789", "Te recomiendo la película: " + selectedFilmTitle);
+                        enviarViaWhatsApp("660844952", "Te recomiendo la película: " + selectedFilmTitle);
                     }
                 })
                 .show();
     }
+
+
+    private void seleccionarContacto() {
+        Intent intent = new Intent(Intent.ACTION_PICK, Uri.parse("content://contacts"));
+        intent.setType(ContactsContract.CommonDataKinds.Phone.CONTENT_TYPE); // Solo contactos con números
+        startActivityForResult(intent, PICK_CONTACT_REQUEST);
+    }
+
 
     private void enviarViaWhatsApp(String phoneNumber, String message) {
         try {
@@ -145,6 +157,26 @@ public class FilmListActivity extends AppCompatActivity {
         super.onResume();
         miAdaptador.notifyDataSetChanged();
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == PICK_CONTACT_REQUEST && resultCode == RESULT_OK) {
+            Uri contactUri = data.getData();
+            if (contactUri != null) {
+                String[] projection = {ContactsContract.CommonDataKinds.Phone.NUMBER};
+                try (Cursor cursor = getContentResolver().query(contactUri, projection, null, null, null)) {
+                    if (cursor != null && cursor.moveToFirst()) {
+                        int numberIndex = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER);
+                        String phoneNumber = cursor.getString(numberIndex);
+                        enviarViaAppMensajes(phoneNumber, "Te recomiendo la película: " + selectedFilmTitle);
+                    }
+                }
+            }
+        }
+    }
+
 
     private void showCustomToast(String message) {
         LayoutInflater inflater = getLayoutInflater();

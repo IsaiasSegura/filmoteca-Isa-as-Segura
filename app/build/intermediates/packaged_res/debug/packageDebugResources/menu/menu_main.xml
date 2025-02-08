@@ -11,4 +11,8 @@
     <item
         android:id="@+id/menu_settings"
         android:title="Ajustes" />
+    <item
+        android:id="@+id/menu_mas_info"
+        android:title="Más info" />
+
 </menu>

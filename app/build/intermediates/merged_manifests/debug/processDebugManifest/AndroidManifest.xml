@@ -18,6 +18,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <permission
         android:name="es.pmdm.filmoteca.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
@@ -38,6 +39,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Material3.Light" >
+        <activity
+            android:name="es.pmdm.filmoteca.MoreActivity"
+            android:exported="false" />
         <activity
             android:name="es.pmdm.filmoteca.SettingsActivity"
             android:exported="false" />

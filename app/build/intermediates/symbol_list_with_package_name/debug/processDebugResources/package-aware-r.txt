@@ -3421,6 +3421,7 @@ id matrix
 id menu_acercaDe
 id menu_anyadirPeli
 id menu_delete
+id menu_mas_info
 id menu_settings
 id menu_share
 id message
@@ -3649,6 +3650,7 @@ id unlabeled
 id up
 id useLogo
 id vertical_only
+id videoView
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -3785,6 +3787,7 @@ layout activity_film_data
 layout activity_film_edit
 layout activity_film_list
 layout activity_login
+layout activity_more
 layout activity_register
 layout activity_settings
 layout custom_dialog
@@ -3873,6 +3876,7 @@ menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw trailer
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
