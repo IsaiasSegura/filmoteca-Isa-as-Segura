@@ -110,10 +110,11 @@ public class FilmListActivity extends AppCompatActivity {
         }
     }
 
+    //le pasamos nuestro tlf pero podramos pasar el que quisieramos de contactos
     private void showShareDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Recomendar Película")
-                .setItems(new String[]{"Seleccionar Contacto", "Compartir por WhatsApp"}, (dialog, which) -> {
+                .setItems(new String[]{"Compartir por SMS", "Compartir por WhatsApp"}, (dialog, which) -> {
                     if (which == 0) {
                         seleccionarContacto();  // Llamamos al método para abrir contactos
                     } else {
